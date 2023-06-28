@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Creator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Meme Creator Application</h1>
+      </header>
+      <h3>Create a Meme</h3>
+      <form>
+        <div class="image-container">
+          <label for="image">Select an image</label>
+          <input type="file" id="selectImage" />
+        </div>
+
+        <div class="toptext-container">
+          <label for="topText">Add Top Text</label>
+          <div class="input-cont">
+              <input type="text" id="topText" placeholder="Add Text.." />
+              <button class="add">Add</button>
+          </div>
+        </div>
+
+        <div class="bottomtext-container">
+          <label for="topText">Add Bottom Text</label>
+          <div class="input-cont">
+              <input type="text" id="bottomText" placeholder="Add Text.." />
+              <button class="add">Add</button>
+          </div>
+        </div>
+      </form>
+
+      <canvas id="meme-container"></canvas>
+    </main>
+    <button id="downloadButton" class="download" onclick="downloadMeme()">Download Meme</button>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
